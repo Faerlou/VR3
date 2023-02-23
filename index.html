@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>AR.js A-Frame Location-based</title>
-<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-<script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar-threex-location-only.js'></script>
-<script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js'></script>
-</head>
-<body>
-<a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false' renderer='antialias: true; alpha: true'>
-    <a-camera gps-new-camera='gpsMinDistance: 50'></a-camera>
-    <a-entity material='color: red' geometry='primitive: box' gps-new-entity-place="latitude: <68.933>; longitude: <33.109>" scale="100 100 100"></a-entity>
-</a-scene>
-</body>
+
+  <head>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+  </head>
+
+
+  <body>
+
+<script>
+    window.onload = function () {
+      document
+        .querySelector(".say-hi-button")
+        .addEventListener("click", function () {
+        });
+    };
+  </script>
+<div class="btn-group">
+   <a onclick="javascript:history.back(); return false;">Назад</a>
+</div>
+
+    <a-scene>
+      <a-sky src="https://cdn.glitch.global/4c68df5b-576f-4389-9e0b-f2194ff0a297/hram2.png?v=1676906765465" scale="1 1 1" rotation="0 140 0"></a-sky>
+    </a-scene>
+  </body>
+
+
 </html>
